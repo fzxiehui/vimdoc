@@ -15,3 +15,17 @@ cd doc
 run nvim-qt
 :helptags .
 ```
+
+- ubuntu 
+```shell
+# clone
+git clone https://github.com/fzxiehui/vimdoc
+
+# 创建软链接
+ln -s <vimdoc path> <user home>/.config/nvim/doc
+
+# 创建 tags
+cd doc
+nvim
+:helptags .
+```
