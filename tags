@@ -9,4 +9,7 @@ git-remote	git_quick.txt	/*git-remote*
 git-reset	git_quick.txt	/*git-reset*
 git-tag	git_quick.txt	/*git-tag*
 git_quick.txt	git_quick.txt	/*git_quick.txt*
+vue-index	vue_index.txt	/*vue-index*
+vue-top	vue_index.txt	/*vue-top*
+vue_index.txt	vue_index.txt	/*vue_index.txt*
 xtop.txt	xtop.txt	/*xtop.txt*
