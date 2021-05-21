@@ -1,0 +1,175 @@
+*py_os.txt*
+
+			Python - os
+------------------------------------------------------------------------------
+						*py-os*
+
+------------------------------------------------------------------------------
+						*py-os-path* *py-os-path-abspath*
+*abspath* 		获取目录绝对路径
+
+For example:
+>
+  # 获取当前目录绝对路径
+  os.path.abspath('.')
+<
+------------------------------------------------------------------------------
+						*py-os-path-basename*
+*basename* 		返回路径 path 的基本名称
+
+For example:
+>
+  # 返回路径 path 的基本名称
+  os.path.basename(os.path.abspath('.'))
+<
+
+------------------------------------------------------------------------------
+						*py-os-path-dirname*
+*dirname* 		返回文件所在目录
+
+For example:
+>
+  # 返回上级目录
+  os.path.dirname(os.path.abspath('.'))
+  # 文件所在目录
+  os.path.dirname(os.path.abspath('./os_path.py'))
+<
+------------------------------------------------------------------------------
+						*py-os-path-realpath*
+*realpath* 		返回指定文件的规范路径，消除路径中存在的任何符号链接
+
+For example:
+>
+  # 返回指定文件的规范路径，消除路径中存在的任何符号链接
+  print(os.path.realpath('./'))
+<
+------------------------------------------------------------------------------
+						*py-os-path-exists*
+						*py-os-path-isdir*
+						*py-os-path-isfile*
+*exists* 		查看路径是否存在并验证权限
+*isdir* 		目录是否存在
+*isfile* 		文件是否存在
+
+For example:
+>
+  # 查看路径是否存在,如果没也执行权限也是返回 False
+  os.path.exists(os.path.abspath('./test'))
+  os.path.exists('./test')
+
+  # 目录是否存在
+  os.path.isdir("/home/abd")
+
+  # 文件是否存在
+  os.path.isfile('./os_path.py')
+<
+------------------------------------------------------------------------------
+						*py-os-path-getsize*
+*getsize* 		返回指定文件的规范路径，消除路径中存在的任何符号链接
+
+For example:
+>
+  # 目录或文件大小,不存在抛 OSError
+  print(os.path.getsize('./os_path.py'))
+<
+------------------------------------------------------------------------------
+						*py-os-path-isabs*
+*isabs*		是否为绝对路径
+
+For example:
+>
+  # 是否为绝对路径
+  os.path.isabs("/home/adb")
+<
+------------------------------------------------------------------------------
+						*py-os-path-samefile*
+*samefile*		判断硬链接
+
+For example:
+>
+  # 判断硬链接
+  os.path.samefile('/home/hello/.config/nvim/init.vim', '/home/hello/.config/nvim/doc/init.vim')
+<
+------------------------------------------------------------------------------
+						*py-os-path-ismount*
+*ismount*		该目录是否为挂载点
+
+For example:
+>
+  # 该目录是否为挂载点
+  os.path.ismount("/home/adb")
+<
+------------------------------------------------------------------------------
+						*py-os-path-expanduser*
+*expanduser*		家目录补全为绝对路径
+
+For example:
+>
+  # 家目录补全为绝对路径
+  os.path.expanduser("~/project")
+<
+------------------------------------------------------------------------------
+						*py-os-path-expandvars*
+*expandvars*		环境变量完整路径
+
+For example:
+>
+  # 环境变量完整路径
+  os.path.expandvars("${HOME}")
+<
+------------------------------------------------------------------------------
+						*py-os-path-commonprefix*
+						*py-os-path-commonpath*
+*commonprefix*		路径比较,保留次级相同
+*commonpath*		路径比较,保留上级相同
+
+For example:
+>
+  # 路径比较
+  os.path.commonprefix(['/usr/lib', '/usr/local/lib'])
+  #  /usr/l
+  
+  os.path.commonpath(['/usr/lib', '/usr/local/lib'])
+  #  /usr
+<
+------------------------------------------------------------------------------
+						*py-os-path-time*
+*time*			时间相关
+
+For example:
+>
+  # 目录或文件 最后访问时间 不存在抛 OSError
+  os.path.getatime("./")
+
+  # 目录或文件 最后修改时间 不存在抛 OSError
+  os.path.getmtime('./')
+  os.path.getctime('./')
+<
+------------------------------------------------------------------------------
+						*py-os-path-join*
+*join*			路径拼接
+
+For example:
+>
+  # 路径拼接 
+  os.path.join("./", "hello", "world")
+<
+------------------------------------------------------------------------------
+						*py-os-path-normpath*
+*normpath*		去除多余分隔
+
+For example:
+>
+  # 去除多余分隔
+  os.path.normpath("///hello/home///abc")
+<
+------------------------------------------------------------------------------
+						*py-os-path-split*
+*split*		去除多余分隔
+
+For example:
+>
+  # 目录拆分
+  os.path.split(os.path.abspath('.'))
+<
+ vim:tw=78:ts=8:ft=help:norl:
