@@ -143,7 +143,7 @@ let g:rainbow_conf = {
 """""""""""""""""""""""""""嵌套括号高亮插件""""""""""""""""""""""""""""End
 
 """""""""""""""""""""""""""树形的目录管理插件""""""""""""""""""""""""""""Begin
-autocmd vimenter * NERDTree  "自动开启Nerdtree
+" autocmd vimenter * NERDTree  "自动开启Nerdtree
 let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
 let NERDTreeShowBookmarks=1  " 开启Nerdtree时自动显示Bookmarks
 "打开vim时如果没有文件自动打开NERDTree
