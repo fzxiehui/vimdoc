@@ -344,3 +344,7 @@ set noexpandtab
 set shiftwidth=2
 """""""""""""""""""""""""""光标tab""""""""""""""""""""""""""""End
 
+" indentLine 
+autocmd FileType json,markdown let g:indentLine_conceallevel = 0
+" vim-json
+autocmd FileType json,markdown let g:vim_json_syntax_conceal = 0
