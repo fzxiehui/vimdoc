@@ -145,7 +145,7 @@ let g:rainbow_conf = {
 """""""""""""""""""""""""""树形的目录管理插件""""""""""""""""""""""""""""Begin
 " autocmd vimenter * NERDTree  "自动开启Nerdtree
 let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
-let NERDTreeShowBookmarks=1  " 开启Nerdtree时自动显示Bookmarks
+let NERDTreeShowBookmarks = 1  " 开启Nerdtree时自动显示Bookmarks
 "打开vim时如果没有文件自动打开NERDTree
 " autocmd vimenter * if !argc()|NERDTree|endif
 "当NERDTree为剩下的唯一窗口时自动关闭
@@ -154,7 +154,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 let NERDTreeIgnore = ['\.pyc$']  " 过滤所有.pyc文件不显示
-let g:NERDTreeShowLineNumbers=0 " 是否显示行号
+let g:NERDTreeShowLineNumbers = 0 " 是否显示行号
 let g:NERDTreeHidden=0     "不显示隐藏文件
 ""Making it prettier
 let NERDTreeMinimalUI = 1
@@ -163,9 +163,9 @@ nnoremap td :NERDTreeToggle<CR> " 开启/关闭nerdtree快捷键
 """""""""""""""""""""""""""树形的目录管理插件""""""""""""""""""""""""""""End
 
 """""""""""""""""""""""""""函数树形插件""""""""""""""""""""""""""""Begin
-let g:tagbar_width=30
-" nnoremap <silent> <F4> :TagbarToggle<CR> " 将tagbar的开关按键设置为 F4
-nnoremap tf :TagbarToggle<CR> " 将tagbar的开关按键设置为 F4
+let g:tagbar_width = 30
+" nnoremap <silent> <F4> :TagbarToggle<CR> " 将tagbar的开关按键设置为 tf
+nnoremap tf :TagbarToggle<CR> " 将tagbar的开关按键设置为 tf
 """""""""""""""""""""""""""函数树形插件""""""""""""""""""""""""""""End
 
 
@@ -213,7 +213,7 @@ nnoremap <C-l> <C-w>>
 " au BufWinLeave * silent mkview
 " au BufWinEnter * silent loadview
 " 设置cmd下正常使用使用双字
-set ambiwidth=double
+" set ambiwidth=double
 
 " 设置折行模式
 set fdm=marker
@@ -229,7 +229,7 @@ set nobackup
 set nowritebackup
 
 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
+" set updatetime=300
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -348,3 +348,7 @@ set shiftwidth=2
 autocmd FileType json,markdown let g:indentLine_conceallevel = 0
 " vim-json
 autocmd FileType json,markdown let g:vim_json_syntax_conceal = 0
+
+" set fileencoding=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+" set termencoding=utf-8
+set encoding=utf-8
