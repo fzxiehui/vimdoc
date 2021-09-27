@@ -76,16 +76,16 @@ nmap <leader>+ <Plug>AirlineSelectNextTab
 " 设置切换tab的快捷键 <\> + <q> 退出当前的 tab
 nmap <leader>q :bp<cr>:bd #<cr>
 " 修改了一些个人不喜欢的字符
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.linenr = "CL" " current line
-let g:airline_symbols.whitespace = '|'
-let g:airline_symbols.maxlinenr = 'Ml' "maxline
-let g:airline_symbols.branch = 'BR'
-let g:airline_symbols.readonly = "RO"
-let g:airline_symbols.dirty = "DT"
-let g:airline_symbols.crypt = "CR" 
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.linenr = "CL" " current line
+" let g:airline_symbols.whitespace = '|'
+" let g:airline_symbols.maxlinenr = 'Ml' "maxline
+" let g:airline_symbols.branch = 'BR'
+" let g:airline_symbols.readonly = "RO"
+" let g:airline_symbols.dirty = "DT"
+" let g:airline_symbols.crypt = "CR" 
 """""""""""""""""""""""""""设置状态栏""""""""""""""""""""""""""""End
 
 """""""""""""""""""""""""""注释插件""""""""""""""""""""""""""""Begin
