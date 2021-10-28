@@ -29,6 +29,10 @@ Plug 'majutsushi/tagbar'
 
 " 补全
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" markdown 预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 call plug#end()
 
 " indentLine 配置
