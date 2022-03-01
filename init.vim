@@ -40,7 +40,7 @@ let g:indent_guides_guide_size 	= 1  " 指定对齐线的尺寸
 let g:indent_guides_start_level = 2  " 从第二层开始可视化显示缩进
 
 " vim-monokai 配色配置
-" colo monokai
+colo monokai
 
 """""""""""""""""""""""""""设置状态栏""""""""""""""""""""""""""""Begin
 " 设置状态栏
